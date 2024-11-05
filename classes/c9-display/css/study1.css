@@ -1,0 +1,23 @@
+.a{
+    background: pink;
+}
+.b{
+    background: salmon;
+}
+.b li{
+    background: seagreen;
+}
+.c{
+    background: lightseagreen;
+    /* 인라인태그는 가로세로 지정 해도 안바뀜 */
+    width: 400px;
+}
+.c+.a{
+    /* c클래스 다음에 오는 a태그 하나 */
+    display: inline;
+}
+.d{
+    width: 400px;
+    background: rebeccapurple;
+    height: 400px;
+}

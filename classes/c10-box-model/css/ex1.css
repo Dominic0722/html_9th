@@ -1,0 +1,36 @@
+*{
+    /* css에서는 수치가0인 경우에만 한하여 단위를 생략해서 표현할 수 있다. */
+    margin: 0;
+    padding: 0;
+}
+#container{
+    border: 10px solid black;
+    width: 1200px;
+}
+.a{
+    background: red;
+    width: 500px;
+    height: 300px;
+}
+.b{
+    background: orange;
+    width: 500px;
+    height: 200px;
+    border: 10px solid lime;
+}
+.c{
+    width: 500px;
+    height: 150px;
+    background: green;
+    border: 10px solid aqua;
+    box-sizing: border-box;
+}
+
+/*
+a: 300px
+b: 220px
+c: 130px
+d: 690px
+e: 500px
+
+6 1840*/

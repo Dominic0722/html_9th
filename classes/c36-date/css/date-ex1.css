@@ -1,0 +1,29 @@
+*{
+    margin: 0;padding: 0;
+}
+
+.clock{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#time{
+    /* border: 1px solid salmon; */
+    width: 50%;
+}
+.clock.day{
+    background: url(../img/day3.png) no-repeat 50% 50% / cover;
+    color: #fff;
+    text-shadow: 0 0 10px #fff;
+    
+}
+.clock.night{
+    background: url(../img/night2.jpg) no-repeat 50% 50% / cover;
+    color: rgb(212, 39, 218);
+    text-shadow: 0 0 10px #550651;
+    font-family: "Eater", serif;
+}
+
+.date{font-size: 4rem;}
+.time{font-size: 15rem;}

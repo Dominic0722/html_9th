@@ -1,0 +1,105 @@
+*{
+    margin: 0;padding: 0;
+}
+header{
+    width: 1280px;
+    height: 215px;
+    background-color: rgb(153, 208, 245);
+    margin: 0 auto;
+}
+main{
+    width: 1280px;
+    min-height:300px ;
+    background-color: pink;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 60px;
+}
+.left{
+    background-color: rgb(185, 27, 27);
+    width: 830px;
+    
+}
+.left>div{
+    margin-bottom: 16px;
+}
+.left>div:last-of-type{
+    margin-bottom: 0;
+}
+.a{
+    background-color: darkcyan;
+    height: 130px;
+    
+}
+.b{
+    background-color: darkcyan;
+    height: 426px;
+    
+}
+.c{
+    background-color: darkcyan;
+    height: 560px;
+    
+}
+.d{
+    background-color: darkcyan;
+    height: 858px;
+    
+}
+.right>div{margin-bottom: 16px;}
+.right>div:last-of-type{margin-bottom: 0;}
+.e{
+    background-color: lemonchiffon;
+    height: 164px;
+}
+.f{
+    background-color: lemonchiffon;
+    height: 240px;
+}
+.g{
+    background-color: lemonchiffon;
+    height: 80px;
+}
+.h{
+    background-color: lemonchiffon;
+    height: 172px;
+}
+.i{
+    background-color: lemonchiffon;
+    height: 236px;
+}
+.j{
+    background-color: lemonchiffon;
+    height: 236px;
+}
+.k{
+    background-color: lemonchiffon;
+    height: 240px;
+}
+.l{
+    background-color: lemonchiffon;
+    height: 516px;
+}
+.m{
+    background-color: lemonchiffon;
+    height: 80px;
+}
+.right{
+    background-color: rgb(57, 57, 165);
+    width: 420px;
+}
+footer{
+    background-color: rgb(241, 240, 144);
+    height: 431px;
+    padding: 30px 0 78px;
+    box-sizing: border-box;
+}
+.innerFooter{
+    width: 1280px;
+    background-color: rgb(154, 247, 170);
+    margin: 0 auto;
+}
+
+/* 130 426 560  858 16 */
+/* 164 240 80 */

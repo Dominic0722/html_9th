@@ -1,0 +1,93 @@
+*{margin: 0;padding: 0;}
+main{
+    margin-left: 50px;
+}
+.box{
+    border: 1px solid black;
+    width: 800px;
+    height: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row; /*기본*/
+    flex-direction: row-reverse;
+    flex-direction: column;
+    flex-direction: column-reverse;
+    flex-direction: row;
+    justify-content: flex-start;
+    justify-content: flex-end;
+    justify-content: center;
+    justify-content: space-between;
+    justify-content: space-around;
+    justify-content: space-evenly;
+    flex-direction: column;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch; /*기본*/
+    align-items: flex-start;
+    align-items: flex-end;
+    align-items: center;
+    align-items: stretch;
+    flex-wrap: nowrap;/*기본*/
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+.box>div{
+    border: 1px solid green;
+}
+.h100{
+    height: 100px;
+}
+.box2{
+    border: 5px solid black;
+    width: 800px;
+    margin: 30vh auto;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.box2>div{
+    border: 1px solid blue;
+    flex-basis: 200px;
+    flex-shrink: 0;/*기본*/
+}
+.box2>div:nth-of-type(1){
+    flex-shrink: 0;
+}
+.box3{
+    border: 5px solid black;
+    width: 800px;
+    margin: 30vh auto;
+    display: flex;
+    flex-wrap: nowrap;
+    height: 300px;
+    align-items: center;
+}
+.box3>div{
+    border: 1px solid brown;
+    flex-grow: 1;
+}
+.box3>div:nth-of-type(1){
+    flex-grow: 3;
+    order: 2;
+    align-self: flex-start;
+}
+.box3>div:nth-of-type(2){
+    order: 1;
+    align-self: stretch;
+}
+.box4{
+    border: 10px solid salmon;
+    width: 80%;
+    min-height: 50vh;
+    margin: 0 auto;
+    display: flex;
+}
+.side{
+    background-color: #7c97ee;
+    flex-basis: 200px;
+}
+.contents{
+    background-color: rgb(194, 93, 110);
+    flex-grow: 1;
+}
+
+/* 컨텐츠 포함해서 even 하게 grow? */

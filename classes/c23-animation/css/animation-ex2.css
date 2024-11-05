@@ -1,0 +1,53 @@
+*{
+    margin: 0;padding: 0;
+}
+ul{
+    list-style: none;
+}
+.station{
+    overflow: hidden;
+    font-weight: bold;
+    position: fixed;
+    left: 0;
+    top: 40%;
+    width: 100%;
+    transform: rotate(30deg)scale(1.5);
+}
+.train{
+    width: 200%;
+    
+    display: flex;
+}
+.train>li{
+    /* border: 1px solid green; */
+    width: 50%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.a,.b{
+    font-size: calc(100vw / 16);
+}
+.a{
+    animation: trainA 20s linear -5s infinite;
+    color: blue;
+}
+.b{
+    animation: trainB 20s linear -15s infinite;
+    color: brown;
+}
+@keyframes trainA {
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+@keyframes trainB {
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-200%);
+    }
+}

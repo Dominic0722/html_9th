@@ -1,0 +1,34 @@
+blockquote {
+    font-style: italic;
+    line-height: 1.618;
+    font-size: 1.2em;
+    width: 30em;
+    position: relative;
+    padding: 40px 80px;
+    border: 1px solid black;
+  }
+  blockquote::before {
+    content: open-quote;
+    /* Place it at the top-left */
+    top: 0;
+    left: 0;
+  }
+  
+  blockquote::after {
+    content: close-quote;
+    /* Place it at thee bottom-right */
+    bottom: 0;
+    right: 0;
+  }
+blockquote::before,
+blockquote::after {
+  background-color: #cccccc;
+  
+  width: 60px;
+  height: 60px;
+  line-height: 1.618;
+  font-size: 3em;
+  border-radius: 100%;
+  text-align: center;
+  position: absolute;
+}

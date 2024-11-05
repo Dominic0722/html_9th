@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>변수 활용</title>
+</head>
+<body>
+    <h1>변수의 활용</h1>
+    <p>자바스크립트는 위에서 아래로 해석하기 때문에, 변수를 불러오는 표현을 쓰기전에 변수를 먼저 선언해야 한다.</p>
+    <script>
+        // a = 10
+        // let a = 30 에러
+        let a = 30
+        a = 10
+
+    </script>
+    <p>각각의 객체의 공간은 독립공간이기 때문에 (예:서로다른폴더) 그 객체 안에서 사용되는 변수 key는 같은 이름을 써도 상관없다.</p>
+    <script>
+        let person1 ={name:"이미연",gender:"여자"}
+        let person2 ={name:"서유담",gender:"여자"}
+        person1.name="정현진"
+    </script>
+    <p>함수는 실행이 될 때 일시적으로 공간이 만들어지고 함수가 종료되면 공간이 사라진다. 공간이 사라지면 함수 안에서 생성했던 변수도 같이 사라진다.</p>
+    <p>함수안의 공간은 독립공간이기 때문에 변수 이름이 바깥 공간과 같아도 상관없다.</p>
+    <p>함수안에서 밖의 변수로 접근을 할 수는 있지만, 밖에서 함수 안쪽의 변수를 바로 접근할 수는 없다.</p>
+    <script>
+        let cat="뭉치"
+        function abc(){
+            // let cat ="박치"
+            cat="박치" //안에서 정의된게 없어서 밖에서 정의된걸 가져옴
+            console.log(cat)
+            let dog="행복이"
+        }
+        abc()
+        console.log(cat)
+        console.log(dog)// 밖에서 안의 폴더에 있는 let dog은 불러올수 없어서 에러
+        //안>밖 가능 밖>안 불가능
+    </script>
+</body>
+</html>

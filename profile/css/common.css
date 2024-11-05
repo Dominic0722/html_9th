@@ -1,0 +1,107 @@
+/* common style */
+
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+html{
+    font-family: 'Pretendard';
+    font-size: var(--fontsize-pc,20px);
+    /* 만에하나 안될경우를 위해 ,20px */
+    line-height: 1.4;
+    /* word-break: keep-all; */
+    scroll-behavior: smooth;
+}
+
+.innerContent{
+    width: 1440px;
+    margin: 0 auto;
+}
+.btnCommon{
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    display: inline-block;
+    border-radius: 0.3rem;
+    padding: 0.8rem 2.15rem;
+    background-color: var(--maincolor);
+    color: #fff;
+}
+.btnCommon:hover{
+    color: var(--subcolor);
+}
+.btnCommon:active{
+    color: var(--maincolor);
+    background-color: var(--subcolor);
+}
+:root{
+    --maincolor:#39036D;
+    --subcolor:#823ABD;
+    --fontsize-pc:20px;
+    --fontsize-tab:18px;
+    --fontsize-mob:14px;
+    --fontweight-thin:200;
+    --fontweight-bold:600;
+}
+h2{
+    font-family: 'Poppins';
+    font-weight: 400;
+    letter-spacing: 0.5rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+h3{
+    font-size: 3.15rem;
+    font-family: 'Poppins';
+    font-weight: 700;
+    margin-bottom: 1rem;    
+}
+.desc{
+    margin-bottom: 4rem;
+}
+
+
+pc{
+    /* primary color change semantic tag*/
+    color: var(--subcolor);
+}
+thin{
+    /* thinner font semantic tag */
+    font-weight: var(--fontweight-thin);
+}
+b{
+    font-weight: var(--fontweight-bold);
+}
+
+/* 전체 스크롤바 */
+::-webkit-scrollbar {
+    width: 0.7rem; /* 스크롤바의 너비 */
+    height: .7rem; /* 가로 스크롤바의 높이 */
+}
+
+/* 스크롤바의 트랙 */
+::-webkit-scrollbar-track {
+    background: #000; /* 트랙 배경 색상 */
+    border-radius: 10px; /* 트랙 모서리 둥글게 */
+}
+
+/* 스크롤바의 핸들 */
+::-webkit-scrollbar-thumb {
+    background: var(--maincolor); /* 핸들 색상 */
+    border-radius: 10px; /* 핸들 모서리 둥글게 */
+}
+
+/* 핸들 호버 시 색상 변경 */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--subcolor); /* 핸들 호버 색상 */
+}
+
+/* 가로 스크롤바의 핸들 */
+::-webkit-scrollbar-thumb:horizontal {
+    background: var(--maincolor); /* 가로 핸들 색상 */
+}
+/* body::-webkit-scrollbar {
+    display: none; 
+} */
+/* Webkit 기반 브라우저에서 스크롤바 숨기기 */

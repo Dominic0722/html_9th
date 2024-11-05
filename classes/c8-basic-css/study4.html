@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스타일의 상속</title>
+    <style>
+        .parent{
+            color: red;
+        }
+        h3{
+            color: blue;
+        }
+        .parent h3{
+            color: aqua;
+        }
+        div.parent h3 {
+        color: darkcyan;
+        font-size: 104px;
+        background: #8fd1d1;
+}
+    </style>
+</head>
+<body style="background: beige;">
+    <h1>스타일의 상속</h1>
+    <p>부모태그가 자식태그에게 스타일을 물려주는 행위 <br>
+    스타일의 상속은 언제나 일어나지 않는다 -> 모든 css 속성이 자식태그에게 상속되지는 않는다. <br>
+    주로 글씨색상과 크기 등 글씨와 관련된 css속성은 상속된다. <br>
+    부무로부터 상속받는 상속스타일은 우선순위점수와 관계없이 언제나 후순위로 밀린다.</p>
+
+    <div class="parent">
+        <h3>title</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia id corporis natus unde nemo est eum sit ut, tenetur repellendus aliquid earum veniam minus? Similique optio illo quibusdam reiciendis officiis?</p>
+        <div class="frame">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, tempora voluptate fugit, praesentium rem tempore totam quis consectetur excepturi numquam, ad sit laudantium eaque id assumenda voluptatum possimus porro esse.</p>
+        </div>
+    </div>
+</body>
+</html>

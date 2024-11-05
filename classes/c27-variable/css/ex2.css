@@ -1,0 +1,87 @@
+*{
+    margin:0;padding: 0;
+}
+html{
+    font-size: 20px;
+}
+ul{
+    list-style: none;
+}
+
+.bmi{
+    
+    width: 80%;
+    margin: 0 auto;
+    min-width: 800px;
+}
+.bmi h2{
+    background-color: rgb(64, 180, 116);
+    padding: 1rem;
+    color: #fff;
+}
+.bmi h2+p{
+    background-color: rgb(252, 241, 241);
+    margin: 1rem;
+    padding: 1rem;
+}
+.bmi h2+p+div{
+    padding: 1rem;
+    border: 1px solid #efefef;
+    margin: 1rem;
+}
+.bmi h2+p+div dl{
+    
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+    
+    
+}
+.bmi h2+p+div dl>dt{
+    
+    width: 50%;
+    
+}
+.bmi h2+p+div dl>dd{
+    
+    width: 50%;
+    
+    color: crimson;
+}
+.bmiBarList{
+    
+    display: flex;
+}
+.bmiBarList>li{
+    
+    position: relative;
+    padding: 0.5rem;
+    text-align: center;
+}
+.bmiBarList>li>span{
+    
+    position: absolute;
+    right: 0;
+    top: 0;
+    /* transform: translateY(-100%)translateX(50%); */
+    transform: translate(50%,-100%);
+
+
+}
+.bmiBarList>li:nth-of-type(1){
+    flex: 1.4;
+    background-color: lightblue;
+}
+.bmiBarList>li:nth-of-type(2){
+    flex: 1.2;
+    background-color: lightgreen;
+}
+.bmiBarList>li:nth-of-type(3){
+    flex: 1;
+    background-color: lightcoral;
+}
+.bmiBarList>li:nth-of-type(4){
+    flex: 2;
+    background-color: crimson;
+}

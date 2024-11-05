@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>태그 제어하기</title>
+</head>
+<body>
+    <h1>태그의 속성 편집하기</h1>
+    <p>태그가 갖고있는 속성 값을 설정하거나 가져올 수 있다.</p>
+    <img src="./imgs/1.jpg" alt="img1" class="img1">
+    <script>
+        let img1 = document.querySelector(".img1")
+        console.log(img1.getAttribute("src"))
+        img1.setAttribute("src","./imgs/2.jpg")
+        img1.setAttribute("alt","img2")
+        img1.setAttribute("data-source","data1") //새로 속성을 만들수 있음
+
+
+    </script>
+    <h1>태그의 컨텐츠 편집하기</h1>
+    <p>태그의 컨텐츠를 다른 내용으로 변경할 수 있다.</p>
+    <p class="tt">이 내용은 다른 내용으로 변경됨.</p>
+    <script>
+        let tt=document.querySelector(".tt")
+        console.log(tt.textContent)
+        tt.innerHTML = "새롭게 바뀐 내용"
+    </script>
+    <h1>태그의 클래스 편집하기</h1>
+    <p>선택된 태그의 클래스를 변경할 수 있다.</p>
+    <p class="a">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit similique tempora id facilis facere quisquam maxime cum saepe? Deleniti earum tempora inventore sit eius autem, assumenda harum blanditiis explicabo sed eligendi tenetur voluptates molestiae, dignissimos optio dolore voluptas id. Ducimus culpa temporibus nisi omnis vero itaque illo. Error ipsa voluptates rem repudiandae molestias quos veritatis velit deleniti, inventore dolorum dolorem iste pariatur optio repellendus alias delectus! Ipsum ea repellendus itaque pariatur nulla unde fuga quisquam molestias labore provident excepturi neque magnam aspernatur a minima, sed consequatur, hic maiores quo? Praesentium pariatur sapiente eum aperiam possimus doloribus sit totam quaerat natus!</p>
+    <script>
+        let a =document.querySelector(".a")
+        a.classList.add("on")
+        a.classList.add("active")
+        a.classList.remove("active")
+        
+    </script>
+</body>
+</html>

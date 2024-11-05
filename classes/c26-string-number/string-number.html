@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문자와 숫자</title>
+</head>
+<body>
+    <h1>문자 데이터 - string</h1>
+    <p>문자데이터를 표현하기 위해서는 내용의 앞뒤로 쌍따옴표("")/홀따옴표('')/백틱(``)를 붙여서 표현한다.</p>
+    <p>문자데이터끼리 더하면 이어진다.</p>
+    <hr>
+    <h1>숫자데이터 - number</h1>
+    <p>숫자데이터는 문자데이터와 같은 쌍따옴표 표식 없이 숫자만 입력하면 된다. 단, 유효한 숫자여야 한다. (예)0100과 같은 숫자는 숫자데이터로 인식되지 않으므로 100이라고 입력해야한다. <br>
+    숫자데이터끼리 사칙연산이 가능하다. <br>
+    문자와 숫자를 더하면 이어진다.(더하기만 됨) 그결과는 문자데이터로 정한다</p>
+    <P>``백틱으로 문자데이터를 표현하면 문자데이터 안에서 줄바꿈을 허용한다.</P>
+    <p>"문자데이터".length 라고 쓰면 앞의 문자데이터의 문자개수를 계산하여 그 자리에 남긴다.</p>
+    <p>"문자데이터"[순번]라고 쓰면 문자데이터안에서 순번에 맞는 문자를 불러와 그 자리에 남긴다.(0부터 숫자를 입력할 수 있다.)</p>
+    <script>
+        //자바스크립트 공간
+        "안녕"
+        '안녕'
+        // `안녕`
+        "she's pretty"
+        // `그는 말했다 "아 냉장고에 뭐 없어?"라고`
+        500
+        // alert(300+"100")
+        console.log("hello")
+        //0이 앞에 있으면 숫자 취급 안함
+        // 1,000 콤마 쓰면 안됨X
+        // alert("she's pretty")
+        // alert(`그는 말했다 "아 냉장고에 뭐 없어?"라고`)
+        // alert(500+(50-20)*2)
+        // alert(500/4)
+        // alert("안녕"+"하세요")
+        document.write("<h1 style='background-color:green'><a href='#'>정현진님 환영합니다</a></h1>")
+        document.write("<p>오늘의 날씨는 "+"매우 맑음"+"입니다.</p>")
+        document.write(`<ul>
+                            <li>`+2024+`년</li>
+                            <li>`+`10월 17일 목요일`+`</li>
+                            <li>`+`오전 9시 50분`+`</li>
+                        </ul>`)
+                        console.log("정동익입니다".length)
+                        console.log("정동익입니다.."[1])
+                        console.log("정현진".length+"안녕하세요".length)
+    </script>
+        
+</body>
+</html>

@@ -1,0 +1,26 @@
+.box{
+    
+    border: 5px solid saddlebrown;
+    background-color: rgb(255, 168, 87);
+    height: 400px;
+    width: 400px;
+}
+.box1{
+    border-radius: 50px;
+    /* 반지름이 50px인 원의 곡률 */
+    box-shadow: 20px -20px 0 red;
+}
+.box2{
+    border-radius: 50%;
+    box-shadow: 20px -20px 20px rgb(255, 102, 0),
+     -20px 20px 20px blue;
+}
+.box3{
+    border-radius: 50px 150px;
+    opacity: 0.5;
+    display: none;
+}
+.box4{
+    border-radius: 0 50px 100px 150px;
+
+}

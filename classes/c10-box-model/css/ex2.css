@@ -1,0 +1,60 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.frame_wrap{
+    border-top: 10px solid black;
+    border-bottom: 10px solid black;
+    padding: 20px 30px;
+    width: 1000px;
+    
+}
+.common_frame{
+    border-bottom: 1px solid #555;
+    padding: 20px;
+}
+.frame_1{
+    padding-top: 30px;
+}
+.common_frame.frame_2{
+    border: none;
+}
+.a{
+    height: 150px;
+    background-color: salmon;
+    padding: 10px 0;
+}
+.b{
+    background-color: sandybrown;
+    box-sizing: border-box;
+    height: 200px;
+    border: 10px solid seagreen;
+}
+
+.c{
+    background-color: saddlebrown;
+    height: 250px;
+    padding: 10px;
+    border: 10px solid violet;
+    box-sizing: border-box;
+}
+
+
+
+/* a 컨텐트 150 
+b 컨텐트 180 hb 200
+c 컨텐트 210 hb 250
+
+frame wrap 컨텐트 711
+frame1 370
+frame2 250
+
+
+A: frame_wrap클래스의 테두리를 포함한 박스너비 1060
+B: a클래스의 테두리를 포함한 박스높이 170
+C: b클래스의 컨텐트박스의 높이 180
+D: c클래스의 테두리를 포함한 박스의 높이 250
+E: frame_1클래스의 테두리를 포함한 박스의 높이  421
+F: frame_2클래스의 테두리를 포함한 박스의 높이   290
+
+A+B+C+D+E+F ?2371 */

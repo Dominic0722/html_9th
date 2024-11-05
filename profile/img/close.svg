@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47.41 47.41">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-miterlimit: 10;
+        stroke-width: 5px;
+      }
+    </style>
+  </defs>
+  <g id="menu_tablet">
+    <g>
+      <line class="cls-1" x1="1.77" y1="45.64" x2="45.64" y2="1.77"/>
+      <line class="cls-1" x1="1.77" y1="1.77" x2="45.64" y2="45.64"/>
+    </g>
+  </g>
+</svg>

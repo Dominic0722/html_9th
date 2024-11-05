@@ -1,0 +1,60 @@
+p{
+    color: black;
+}
+div p{
+    /* div 태그 안에  포함된 자손들 중에서 모든 p태그들을 선택 */
+    color: blue;
+}
+div>p{
+    /* div 태그 안에 포함된 '자식들'만의 p태그들 선택 */
+    color: green;
+}
+.box>p{
+    color: plum;
+}
+
+li>p{
+    color: green;
+}
+.box li>p{
+    color: orange;
+}
+.list1~li{
+    /* list1클래스의 다음*형제 태그들 중에서 li태그들을 선택(여러개), 
+    본인제외
+    이전은 선택이 안됨 */
+    background: pink;
+}
+.list1+li{
+    /* list1클래스의 다음형제 태그 li태그 하나*만 선택 */
+    background: blue;
+}
+.box2>h3:nth-child(3){
+    /* box2클래스의 자식태그 h3태그이면서 3번째 자식을 선택 */
+    color: red;
+}
+.box2>h3:nth-of-type(3){
+    /* box2클래스의 자식 h3태그타입 중에서 3번째 태그를 선택 */
+    color: blue;
+}
+.list_box>li:nth-of-type(2n){
+    font-size: 3rem;
+}
+.list_box>li:nth-of-type(2n+1){
+    text-decoration: underline;
+}
+.list_box>li:nth-of-type(3n+1){
+    color: red;
+}
+a[target="_blank"]{
+    background: black;
+    color: #fff;
+}
+a[href="http://www.naver.com"]{
+    color: #eee;
+    text-decoration: line-through; /*취소선 스타일*/
+    pointer-events: none; /*클릭이 안되게 함*/
+}
+p[data-di="동익이설명"]{
+    font-style: italic;
+}

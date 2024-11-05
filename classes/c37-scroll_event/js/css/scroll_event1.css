@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.wrap {
+  height: 5000px;
+  background-color: beige;
+}
+.btn_top {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  width: 100px;
+  height: 100px;
+  background-color: darkblue;
+  cursor: pointer;
+  /* display: none; */
+  opacity: 0;
+  pointer-events: none;
+  transition: all 1s cubic-bezier(1, -0.77, 0.22, 1.94) 0s;
+  transform: scale(0);
+}
+.btn_top.on{
+    /* display: block; */
+    opacity: 1;
+    pointer-events: auto;
+    transform: scale(1);
+}

@@ -1,0 +1,106 @@
+*{
+    margin: 0;padding: 0;
+}
+header{
+    height: 56px;
+    background-color: rgb(140, 97, 226);
+    position: fixed;
+    
+    left: 0;
+    right: 0;
+    /* width: 100vw;  right 대신 써도 됨*/
+    top: 0;
+    padding: 0 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    
+}
+header>div{
+    background-color: rgb(226, 184, 107);
+    height: 24px;
+    
+    
+}
+
+/* css space 와 부등호 차이 */
+.logo{
+    width: 170px;
+}
+.account{
+    width: 225px;
+}
+.search{
+    width: 730px;
+}
+aside{
+    width: 240px;
+    height: calc(100vh - 56px);
+    background-color: rgb(99, 140, 216);
+    position: fixed;
+    left: 0;
+    top: 56px;
+    overflow-y: auto;
+}
+aside>div{
+    min-height: 300px;
+    background-color: pink;
+    border-bottom: 1px solid black;
+    padding: 12px;
+}
+aside>div>section{
+    min-height: 150px;
+    background-color: rgb(137, 126, 236);
+    border-bottom: 1px solid black;
+    margin-bottom: 12px;
+    
+}
+aside>div>section:last-of-type{
+    margin-bottom: 0;
+    border-bottom: none;
+}
+.category{
+    height: 56px;
+    background-color:rgb(99, 216, 191) ;
+    position: fixed;
+    /* width: calc(100% - 240px); */
+    left: 240px;
+    top: 56px;
+    right: 0;
+    padding: 0 24px; 
+}
+main{
+    background-color: rgb(227, 233, 142);
+    margin-left: 240px;
+    margin-top: 112px;
+    
+    padding: 16px;
+    min-height: 200vh;
+    /* box-sizing: border-box;
+    width: calc(100% - 240px); */
+}
+ul{
+    list-style: none;
+}
+.normalVideo ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+.normalVideo ul li{
+    background-color: rgb(144, 226, 106);
+    height: 340px;
+    /* width: 390px; */
+    width: calc((100% - 16px*(4 - 1))/4);
+    margin-right: 16px;
+    margin-bottom: 32px;
+}
+.normalVideo ul li:nth-of-type(4n){
+    margin-right: 0;
+}
+.normalVideo ul li:nth-last-of-type(1),
+.normalVideo ul li:nth-last-of-type(2),
+.normalVideo ul li:nth-last-of-type(3),
+.normalVideo ul li:nth-last-of-type(4){
+    margin-bottom: 0;
+}

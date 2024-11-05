@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>img tag / video tag</title>
+</head>
+<body>
+    <h1>img tag</h1>
+    <p>홈페이지에서 이미지파일을 연결하여 보여주는 태그</p>
+    <p>src속성은 이미지파일까지의 경로를 입력하면 된다</p>
+    <p>alt속성은 이미지를 설명하는 대체텍스트를 입력하면 된다</p>
+    <p>이미지태그는 src속성과 alt속성 두개는 필수적으로 사용해야 웹표준을 준수할 수 있다</p>
+    <hr>
+    <p style="color: rgb(255, 0, 170);">이미지태그에는 jpg,png,gif,svg 파일 등 대부분의 이미지 파일들을 연결하여 출력할 수 있다</p>
+    <p>단, 브라우저에서 열 수 없는 파일들은 이미지태그에 연결해도 보이지 않는다.(예. psd/ai파일 등등)</p>
+    <p>이미지 태그는 문맥의 뜻이 없다. 글자와 같은 컨텐츠이다.</p>
+    <p>이미지태그는 글자처럼 취급한다.</p>
+    <p>돌고래가 바다를 헤엄치고 있다</p>
+    <a href="https://ko.wikipedia.org/wiki/%EB%8F%8C%EA%B3%A0%EB%9E%98"><img style="height: 20px;" src="./imgs/dolphin-8949505_640.jpg" alt="dolphin"></a>
+    <p>이미지태그는 글자처럼 baseline을 따라서 배치된다.</p>
+    <p>웹사이트에서 이미지를 사용할 때는 이미지용량이 크면 클 수록 홈페이지에 부담이 된다. 왜냐하면 이미지소스를 다운받은 후에 홈페이지가 그려지기 때문이다. 그렇기 때문에 적합한 해상도의 이미지를 사용해야 한다.(가로사이즈 최대 1920픽셀 사용 권장)</p>
+    <hr>
+    <h1>video tag</h1>
+    <p>비디오파일을 연결해서 화면에 보여주는 태그</p>
+    <p>비디오태그는 문맥의 뜻이 없다. 이미지와 같은 그리고 글자와 같은 컨텐츠이다</p>
+    <hr>
+    <p style="font-size: 80px;">파도 영상<video style="height: 80px;" src="./videos/1321208-hd_1920_1080_30fps.mp4" loop autoplay muted></video></p>
+    <h2>컨트롤러만 활성화</h2>
+    <video style="width: 400px;" src="./videos/1321208-hd_1920_1080_30fps.mp4" controls></video>
+    <h2>컨트롤러 활성화 / 무한반복</h2>
+    <video style="width: 400px;" src="./videos/1321208-hd_1920_1080_30fps.mp4" controls loop></video>
+    <h2>컨트롤러 비활성화 / 무한반복 / 자동재생 / 음소거</h2>
+    <p>영상을 자동재생하기 위해서는 반드시 음소거 속성을 같이 써야 한다</p>
+    <video style="width: 400px;" src="./videos/1321208-hd_1920_1080_30fps.mp4" loop autoplay muted></video>
+    <h2>썸네일 이미지 지정 / 컨트롤러 활성화</h2>
+    <video style="width: 400px;" src="./videos/1321208-hd_1920_1080_30fps.mp4" controls poster="./imgs/dolphin-8949505_640.jpg"></video>
+    <hr>
+    <h2>여러종류의 영상을 한번에 등록할 수 있도록 비디오태그를 구성하는것이 가능하다</h2>
+    <video autoplay muted loop>
+        <source src="./videos/video.webm" type="video/webm">
+        <source src="./videos/video.mp4" type="video/mp4">
+    </video>
+    
+</body>
+
+</html>

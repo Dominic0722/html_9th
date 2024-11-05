@@ -1,0 +1,14 @@
+:root{
+    --font-bold:700;
+    --font-medium:400;
+    --main-color:#94322D;
+    --sub-color:#C7B882;
+    --fontsize-pc:20px;
+    --fontsize-tab:18px;
+    --fontsize-mob:14px;
+    --inActive-color:#CEC9C9;
+    --space-small:1rem;
+    --space-medium:2rem;
+    --space-large:3.5rem;
+    --space-Xlarge:7rem;
+}

@@ -1,0 +1,72 @@
+*{margin: 0;padding: 0;}
+.pre_wrap{
+    white-space:pre;
+}
+.pre{
+    white-space: pre-wrap;
+}
+.box{
+    background-color: brown;
+    padding: 20px;
+    height: 300px;
+    width: 300px;
+    box-sizing: border-box;
+    color: #fff;
+}
+.box2{
+    height: 80vh;
+    background-color: bisque;
+    background-image: url("../img/elijah-grimm-8y5O0ZSbbqw-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-position: 0% 100%;
+    background-position: center center;
+    /* position keywords : left, right, top, center, bottom */
+    background-position: calc(100% - 60px) calc(100% - 70px);
+    /* 부호의 앞뒤에 띄어쓰기 */
+    margin: 100px 0;
+}
+.desc{
+    padding-bottom: 50px;
+    border-bottom: 5px solid #000;
+    margin-bottom: 50px;
+    font-size: 1.4rem;
+}
+.box3{
+    color: white;
+    height: 100vh;
+    background-color: deeppink;
+    background-image: url("../img/elijah-grimm-8y5O0ZSbbqw-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: 300px auto;
+    /* 가로300 세로는 비율에 맞게 auto */
+    background-size: auto 100%;
+    background-size: cover;
+    /* 태그의 공간을 가득채우는 방식 - 배경이미지가 잘려서 안보일수 도 있다 */
+    background-size: contain;
+    /* 이미지가 태그의 공간안에 잘리지않는 선에서 최대크기로 들어가서 채우는 방식 */
+    background-position: center center;
+    background: aquamarine url("../img/elijah-grimm-8y5O0ZSbbqw-unsplash.jpg") no-repeat 0 0 /cover;
+    /* color url repeat position size */
+}
+.box4{
+    border: 1px solid #fff;
+    width: 50vw;
+    height: 50vw;
+    background: rgb(0, 255, 179) url("../img/elijah-grimm-8y5O0ZSbbqw-unsplash.jpg") no-repeat 50% 50% / cover;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    background-attachment:fixed;
+}
+.box4.blend{
+    background-blend-mode: multiply;
+}
+.blur{
+    
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+    margin-top: 10%;
+    -webkit-backdrop-filter: blur(10px);
+    /* -webkit- 이라는 접두어를 사용하여 비표준css속성을 임시로 사용할 수 있다. */
+    backdrop-filter: blur(10px);
+}

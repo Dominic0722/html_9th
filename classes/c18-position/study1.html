@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position - 특수레이아웃</title>
+    <link rel="stylesheet" href="./css/study1.css">
+</head>
+<body>
+    <h1>position</h1>
+    <p>포지션은 일반적인 레이아웃이 아닌 특수레이아웃으로만 사용한다 <br>
+    여기서 일반적인 레이아웃이란 위에서 아래로 쌓이는 블록형 레이아웃 또는 나란히 배치하는 레이아웃을 말한다.</p>
+    <br>
+    <hr>
+    <br>
+    <h2>position:relative;</h2>
+    <p>position:relative 가 설정된 태그는 현재 위치를 기준으로 left/right/bottom/top 이 4가지 값을 통하여 위아래좌우로 이동시킬 수 있다.</p>
+    <div class="box a">
+    <p>포지션이 relative로 설정된 태그는 원래 있었던 위치를 기준으로 배치가 된다. 그리고 원래 있었던 위치를 기억하여 그대로 자리를 차지한다. (공중에 안뜬다.)</p>
+    </div>
+    <hr>
+    <h2>position:absolute;</h2>
+    <p>position:absolute가 설정된 태그는 자신을 포함하는 가까운 상위태그 중에서 position이 설정된 태그(relative,absolute,fixed)의 영역을 기준으로 배치된다. <br>
+    absolute 방식은 공중에 띄워서 배치하기 때문에 공간차지를 하지 않는다. <br>
+    공중에 띄워서 배치될때 z-index값이 클 수록 앞쪽에 배치된다. 기본값은 0이며 나중에 만든 태그일 수록 앞쪽에 배치되는 특징을 갖는다.</p>
+    <div class="frame">
+        <div class="con">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus a consectetur illum debitis qui adipisci cum eos laudantium quod. Dolorem quam assumenda autem voluptatum, obcaecati, repudiandae repellendus commodi recusandae mollitia similique nemo eum dolor sequi, accusantium neque magni est natus? Sit, deleniti similique. Hic qui illum beatae laborum eaque commodi odio dolores cum itaque aperiam, harum laudantium ut velit perspiciatis tenetur tempore atque odit nobis necessitatibus. Corrupti minus itaque tempora, delectus non at fugit atque earum obcaecati incidunt dicta neque alias. Repudiandae dolores rem delectus, eius explicabo ad exercitationem distinctio molestiae id cumque quo sed possimus quos molestias officiis expedita dolorum iure? Cum nobis ad inventore doloribus dolor dicta voluptatibus tenetur. Perferendis maxime modi labore alias consequuntur reprehenderit odio, veniam mollitia itaque numquam obcaecati, facilis animi officiis? Est vero repellat officia suscipit asperiores vel. Ratione, iusto architecto fugit, ipsum debitis veniam nisi minima tenetur praesentium qui quisquam enim nulla non sapiente reiciendis iste optio voluptates, beatae aliquam. Asperiores pariatur iure architecto maxime, dignissimos non ab quaerat cumque voluptatibus suscipit sapiente modi ea quod! Eaque iure natus voluptate vel eveniet ratione voluptatum! Distinctio facere consequatur quod, itaque at animi, impedit corporis suscipit amet perferendis accusamus incidunt hic id necessitatibus ducimus, et possimus libero aliquid perspiciatis? Repellendus natus voluptatem illum vel tempore cumque consequuntur odio, reiciendis soluta libero, beatae placeat, laudantium error quos asperiores sed vero magni omnis cum nisi officia minima! Consequatur dolore numquam impedit eligendi temporibus eaque aliquam quam maiores ipsum itaque molestiae saepe, earum perferendis repellat voluptatum eos quo quas voluptates, est pariatur vel praesentium ea. Pariatur asperiores repellendus tempore cumque amet unde! Voluptate eum fuga dolores culpa architecto voluptatibus expedita odit aspernatur cumque hic dolorem at illum dolore, quos quae quisquam quidem deleniti veniam quo suscipit! Rem fugiat delectus eaque quidem. Totam quod earum aperiam, dolor error inventore.
+        </div>
+    </div>
+    <div class="boxwrap">
+        <div class="innerbox">
+            <div class="box b">
+
+            </div>
+            <div class="box c">
+
+            </div>
+            <div class="box d">
+
+            </div>
+        </div>
+            
+    </div>
+    
+    <hr>
+    <h2>position:fixed;</h2>
+    <p>기본적으로 absolute와 모든 특징이 같다.(띄워서 배치된다, 공간차지를 하지 않는다) <br>
+    기준영역이 언제나 화면(view-port)이다.</p>
+    <div class="box e"></div>
+    <hr>
+    <h2>position:sticky;</h2>
+    <p>position:sticky; 속성이 적용된 태그는 문서의 흐름에 따라 일반적인 위치에 배치가 된다. <br>
+    그러나, 스크롤을 내려서 position:sticky;속성이 적용된 태그가 브라우저 화면의 상단 부분에 부딪힐 때까지만 일반적인 위치에 배치가 되고 그 이상 스크롤을 내리게 되면 화면(view-port)에 고정되는 fixed 형식으로 배치된다. <br>
+    <h2>sticky가 적용되기 위해서는 아래와 같은 조건이 필요하다.</h2>
+    <ul>
+        <li>부모태그에 overflow설정되면 sticky가 작동하지 않는다.(overflow:hidden 이 설정되면 안됨)</li>
+    </ul></p>
+    <div class="box f"></div>
+    <div style="height: 200vh;"></div>
+    
+</body>
+</html>

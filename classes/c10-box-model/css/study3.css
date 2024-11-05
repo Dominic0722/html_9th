@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.wrap1{
+    /* margin-left: auto;
+    margin-right: auto; */
+    margin: 0 auto;
+    /* 가변여백 */
+    border: 5px solid black;
+    width: 1200px;
+}
+.wrap2{
+    border: 5px solid #e2c167;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.wrap3{
+    border: 5px solid #d422a8;
+    margin: 0 20px;
+    margin-top: 50px;
+}

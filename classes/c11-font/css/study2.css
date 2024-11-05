@@ -1,0 +1,35 @@
+@font-face {
+    font-family:"등록한폰트1" ;
+    /* 등록명이 영어일 경우 쌍따옴표 필요없고 한글은 필요 */
+    src: url("../font/ChangwonDangamAsac-Bold_0712.ttf");
+}
+.dang{
+    font-family: "등록한폰트1";
+}
+@font-face {
+    font-family: chap;
+    src: url(../font/chab.ttf);
+}
+@font-face {
+    font-family: ddag;
+    src: url(../font/ddag.ttf);
+}
+.chap{
+    font-family: chap;
+}
+.ddag{
+    font-family: ddag;
+    
+}
+.ptag{
+    font-family: "등록한폰트1",chap,ddag,sans-serif;
+}
+.f20{
+    font-size: 20px;
+}
+.f30{
+    font-size: 30px;
+}
+.f20.f30{
+    font-size: 50px;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>논리연산자</title>
+</head>
+<body>
+    <!-- <h1>&&(and연산자)</h1>
+    <p>&&연산문자는 '그리고'라고 해석을 하며 전체경우가 true일 때만 true로 계산을 하고 어느 한 경우라도 false라면 전체를 false로 계산한다.</p>
+    <script>
+        10>2 && 5>1 // true
+        10<2 && 5>0 // false
+        5>1 && 12>10 && 10>=10 // true
+        10>5 && "good" && 10<20 // true
+        !(2 && "" && undefined) //true
+        let b= 10&&2&&"hi"
+
+        
+    </script>
+    <h1>||(or연산자)</h1>
+    <p>또는 연산자는 좌우로 둘다 false일때만 전체를 false로 계산</p>
+    <p>여러 경우 중 하나라도 true라면 전체를 true로 계산</p>
+    <script>
+        5<10 || -2>9 || -3<5 //true
+        -10<=-20||5<2||0==0 //true
+        let a = 0||""||!10 //false
+        // alert(a)
+        
+    </script> -->
+    <h1>quiz</h1>
+    <p>사용자에게 아이디와 비밀번호를 물어보고 정상적으로 입력했다면 알림창으로 [환영합니다] 라고 나오게 하고 그렇지 않다면 [계정정보가 올바르지 않습니다.] 
+        아이디:"green"
+        비밀번호:"1234"
+    </p>
+    <script>
+        let ur_id = prompt("id?")
+        let ur_pw = prompt("pw?")
+        let result = ur_id== "green" && ur_pw == "1234" ? "환영합니다":"계정정보가 올바르지 않습니다"
+        alert(result)
+        
+        
+        
+    </script>
+</body>
+</html>

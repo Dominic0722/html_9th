@@ -1,0 +1,19 @@
+@keyframes slideMove {
+    0%{
+        transform: translateX(0%);
+    }
+    25%{
+        transform: translateX(-25%);
+    }
+    50%{
+        transform: translateX(-50%);
+    }
+    75%{
+        transform: translateX(-75%);
+    }
+    100%{
+        transform: translateX(0%);
+        /* 슬라이드가 4개 있을경우 -((100%/4)*(4-1))*/
+    }
+    
+}

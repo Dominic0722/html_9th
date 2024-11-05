@@ -1,0 +1,27 @@
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(180deg);
+    }
+}
+.box{
+    border: 5px solid #000;
+    width: 300px;
+    height: 300px;
+}
+.ani1{
+    /* animation-name:rotate;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: backwards; */
+       /* forwards -> 다시 안돌아가고 그대로 멈춤 */
+    animation: rotate 4s linear 0s infinite normal alternate;
+}
+.ani1:hover{
+    animation-play-state: paused;
+}

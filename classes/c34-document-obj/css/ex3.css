@@ -1,0 +1,52 @@
+*{
+    margin: 0;padding: 0;
+}
+.popup{
+    position: fixed;
+    width: 300px;
+    padding: 10px;
+    background-color: #ec9e9e;
+    left: 200px;
+    top: 200px;
+    border: 1px solid red;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 905;
+    transition: all 2s ease 0s;
+}
+.popup.on{
+    opacity: 1;
+    pointer-events: auto;
+    
+}
+.modal{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0;
+    pointer-events: none;
+    /* 마우스클릭에 걸리지 않게 함 */
+    z-index: 900;
+    transition: all 2s ease 0s;
+}
+.modal.on{
+    opacity: 0.7;
+    pointer-events: auto; 
+    
+}
+.popup_control{
+    display: flex;
+    justify-content: flex-end;
+}
+.btn_close{
+    padding: 5px;
+    background: #e72323;
+    color: #fff;
+    cursor: pointer;
+}
+#btn_popup{
+    cursor: pointer;
+}

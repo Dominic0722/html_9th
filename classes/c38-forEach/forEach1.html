@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>forEach()함수</title>
+  </head>
+  <body>
+    <h1>forEach()함수</h1>
+    <p>
+      forEach()함수는 배열이나 유사한 배열 객체의 각 원소를 돌면서 입력한 작업을
+      하는 함수
+    </p>
+    <ul class="list">
+      <li>list1</li>
+      <li>list2</li>
+      <li>list3</li>
+      <li>list4</li>
+      <li>list5</li>
+      <li>list6</li>
+    </ul>
+    <!-- foreach 콤마로 나눔(첫번째는 배열,두번째는 배열의 순번,세번째는 배열 그자체) -->
+    <script>
+      let fruits = ["딸기", "복숭아", "샤인머스켓", "수박", "바나나", "무화과"];
+      fruits.forEach(function (a, index, array) {
+        console.log(a, index, array);
+      });
+      let listArray = document.querySelectorAll(".list>li");
+      listArray.forEach(function (litag, index) {
+        litag.style.color = "red";
+        litag.classList.add("list" + index);
+        litag.addEventListener("click", function () {
+          alert("저는" + Number(index + 1) + "번째 리스트입니다.");
+        });
+      });
+    </script>
+  </body>
+</html>

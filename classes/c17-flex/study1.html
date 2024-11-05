@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <link rel="stylesheet" href="./css/study1.css">
+</head>
+<body>
+    <main>
+    <h1>flex</h1>
+    <p>블록레벨태그들을 좌우로 나란히 배치하는 방법으로 flex 방법을 배워보자 <br>
+    플렉스박스는 크게 부모태그(플렉스컨테이너) 자식태그(플렉스아이템) 두부분으로 나뉘며 각각의 부분마다 사용할 수 있는 css속성이 다르다. <br>
+    플렉스 아이템들은 플렉스 컨테이너의 자식태그들을 말하며, 기본적으로는 플렉스 컨테이너 안에서 컨테이너의 메인축을 따라서 나란히 배치되는 특징을 갖는다. <br>
+    교차축은 메인축의 방향에 따라서 자동으로 바뀐다.</p>
+    <h2>flex-container(대장)에 지정하는 속성</h2>
+    <ul>
+        <li>
+            <h3>flex-direction: -> 메인축의 방향을 바꾸어주는 속성</h3>
+            <ul>
+                <li>row 좌>우</li>
+                <li>row-reverse 우>좌</li>
+                <li>column 위>아래</li>
+                <li>column-reverse 아래>위</li>
+            </ul>
+            <p>플렉스아이템들은 무조건 메인축의 시작지점부터 나란히 배치된다.</p>
+        </li>
+        <li>
+            <h3>justfiy-content: ->메인축을 따라 아이템을 정렬하는 방법</h3>
+            <ul>
+                <li>flex-start(기본값)</li>
+                <li>flex-end</li>
+                <li>center</li>
+                <li>space-between 메인축의 시작과 마지막 지점에 아이템을 맞춘후 아이템들의 사이여백을 동일하게 지정하도록 정렬</li>
+                <li>space-around 각 아이템들의 사이여백을 동일하게 지정하여 정렬</li>
+            </ul>
+        </li>
+        <li>
+            <h3>align-items: -> 교차축을 따라 아이템을 정렬하는 방법</h3>
+            <ul>
+                <il>stretch (기본값) 교차측 길이만큼 아이템길이를 늘림</il>
+                <il>flex-start 시작지점에 아이템정렬</il>
+                <il>flex-end 마지막지점에 " "</il>
+                <il>center 중앙지점에 " "</il>
+            </ul>
+        </li>
+        <li>
+            <h3>flex-wrap: nowrap;(기본) <br>
+                flex-wrap: wrap <br></h3>
+            <p>flex-item 들의 줄바꿈을 설정하는 속성</p>
+            <p>기본값은 nowrap 줄바꿈을 허용하지 않는다.</p>
+            <p>wrap 아이템들의 줄바꿈 허용</p>
+        </li>
+        <li>
+            <h3>align-content</h3>
+            <p>flex-container 에서 아이템들의 줄바꿈을 허용했을 때 container 전체 높이를 수직축으로하여 아이템 그룹 전체를 정렬할 때 사용 하는 속성</p>
+        </li>
+    </ul>
+    <hr>
+    <h2>쫄병들에게 지정하는 속성(flex item)</h2>
+    <ul>
+        <li>
+            <h3>flex-basis</h3>
+            <p>width처럼 아이템의 가로 사이즈를 지정할 수있다. 기본값은 auto이다.</p>
+            <p>플렉스 아이템들이 점유하는 기본크기를 설정</p>
+        </li>
+        <li>
+            <h3>flex-shrink</h3>
+            <p>아이템의 크기가 줄어드는 비율</p>
+            <p>플렉스 컨테이너의 너비가 줄어들어서 아이템들이 설정된 너비보다 작아져야할 때, 줄어드는 비율을 말한다.(기본값:1) 아이템들이 줄바꿈이 허용되지 않는 상황에서 유효하다.flex-wrap:nowrap</p>
+            <p>기본값은 1이며 컨테이너 공간이 줄어들면 아이템들의 너비가 같이 같은 비율로 줄어든다.</p>
+        </li>
+        <li>
+            <h3>flex-grow</h3>
+            <p>플렉스 컨테이너의 공간이 여유가 있어서 남아돌 때, 남은 공간을 아이템들이 나눠갖는 비율</p>
+            <p>기본값은 0 이며 이때는, 남은 공간이 있어도 아이템의 크기는 커지려고 하지 않는다.</p>
+        </li>
+        <li>
+            <h3>order</h3>
+            <p>아이템의 보여지는 순서를 바꿀 때 사용 . 기본값 0 </p>
+            <p>order 값이 클수록 나중에 배치된다.</p>
+        </li>
+        <li><h3> align-self</h3>
+            <p>선택한 아이템의 수직축 정렬</p>
+
+        </li>
+    </ul>
+    <div  class="box">
+        <div class="h100">1</div>
+        <div>22</div>
+        <div>333</div>
+        <div>4444</div>
+        <div>1</div>
+        <div>22</div>
+        <div>333</div>
+        <div>4444</div>
+        <div>1</div>
+        <div>22</div>
+        <div>333</div>
+        <div>4444</div>
+        <div>1</div>
+        <div>22</div>
+        <div>333</div>
+        <div>4444</div>
+        <div>1</div>
+        <div>22</div>
+        <div>333</div>
+        <div>4444</div>
+        <div>1</div>
+        <div>22</div>
+        <div>333</div>
+        <div>4444</div>
+        <div>1</div>
+        <div>22</div>
+        <div>333</div>
+        <div>4444</div>
+        <div>1</div>
+        <div>22</div>
+        <div>333</div>
+        <div>4444</div>
+        <div>1</div>
+        <div>22</div>
+        <div>333</div>
+        <div>4444</div>
+        <div>1</div>
+        <div>22</div>
+        <div>333</div>
+        <div>4444</div>
+        <div>1</div>
+        <div>22</div>
+        <div>333</div>
+        <div>4444</div>
+        <div>1</div>
+        <div>22</div>
+        <div>333</div>
+        <div>4444</div>
+        <div>1</div>
+        <div>22</div>
+        <div>333</div>
+        <div>4444</div>
+        <div>1</div>
+        <div>22</div>
+        <div>333</div>
+        <div>4444</div>
+        <div>1</div>
+        <div>22</div>
+        <div>333</div>
+        <div>4444</div>
+        <div>1</div>
+        <div>22</div>
+        <div>333</div>
+        <div>4444</div>
+        <div>1</div>
+        <div>22</div>
+        <div>333</div>
+        <div>4444</div>
+        <div>1</div>
+        <div>22</div>
+        <div>333</div>
+        <div>4444</div>
+    </div>
+    <div class="box2">
+        <div>1</div>
+        <div>22</div>
+        <div>333</div>
+        <div>4444</div>
+        <div>55555</div>
+    </div>
+    <div class="box3">
+        <div>1</div>
+        <div>22</div>
+        <div>333</div>
+        <div>4444</div>
+        <div>55555</div>
+    </div>
+    <div class="box4">
+        <section class="side">side</section>
+        <section class="contents">contents</section>
+    </div>
+    </main>
+</body>
+</html>

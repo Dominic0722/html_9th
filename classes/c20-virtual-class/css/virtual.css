@@ -1,0 +1,40 @@
+h1{
+    display: inline-block;
+}
+h1:hover{
+    background-color: blue;
+    color: aliceblue;
+}
+h1:active{
+    letter-spacing: 20px;
+    text-decoration: underline;
+    background-color: rgb(43, 226, 67);
+}
+p{
+    border: 1px solid black;
+    
+}
+blockquote{
+    border: 1px solid blue;
+    padding: 16px 48px;
+    position: relative;
+    width: 30rem;
+}
+blockquote::before{
+    content: open-quote;
+}
+blockquote:after{
+    content: close-quote;
+}
+blockquote:before,
+blockquote:after{
+    
+    font-size: 3rem;   
+    border: 1px solid red; 
+    position: absolute;
+    left: 0;
+    top: 0;   
+    text-align: center;
+}
+
+

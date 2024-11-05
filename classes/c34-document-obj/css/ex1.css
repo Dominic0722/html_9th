@@ -1,0 +1,30 @@
+*{
+    margin: 0;padding: 0;
+}
+.popup{
+    position: fixed;
+    width: 300px;
+    padding: 10px;
+    background-color: #ec9e9e;
+    left: 200px;
+    top: 200px;
+    border: 1px solid red;
+    display: none;
+}
+.popup.on{
+    display: block;
+    
+}
+.popup_control{
+    display: flex;
+    justify-content: flex-end;
+}
+.btn_close{
+    padding: 5px;
+    background: #e72323;
+    color: #fff;
+    cursor: pointer;
+}
+#btn_popup{
+    cursor: pointer;
+}

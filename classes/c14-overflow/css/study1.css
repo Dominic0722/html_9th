@@ -1,0 +1,40 @@
+.box{
+    background: pink;
+    width: 500px;
+    padding: 20px;
+}
+.box section{
+    border: 1px solid blueviolet;
+}
+.box section:nth-of-type(1){
+    height: 40px;
+}
+.desc{
+    width: 150px;
+    border: 1px solid #000;
+    height: 150px;
+
+}
+.hidden{
+    overflow: hidden;
+    
+}
+.scroll{
+    overflow: scroll;
+    /* auto 사용가능 */
+}
+.over_y{
+    overflow-y: scroll;
+    /* auto 사용가능 */
+}
+.over_x{
+    white-space: nowrap;
+    overflow-x: scroll;
+    /* auto 사용가능 */
+}
+.visible{
+    overflow: visible;
+}
+.auto{
+    overflow: auto;
+}

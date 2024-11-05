@@ -1,0 +1,15 @@
+.wrap{
+    background-color: rgb(233, 165, 165);
+}
+@media (min-width:1500px){
+    /* 화면 최소 너비가 1500픽셀인 경우 ->1500픽셀보다 큰 경우 적용되는 스타일*/
+    .wrap{
+        background-color: aquamarine;
+    }
+}
+@media (min-width:1400px) and (max-width:1499px){
+    /* 1400보다 크고 1499보다 작은 */
+    .wrap{
+        background-color: rgb(106, 96, 245);
+    }
+}
