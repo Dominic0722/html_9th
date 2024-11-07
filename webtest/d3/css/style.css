@@ -1,0 +1,236 @@
+/* 
+@charset "utf-8";
+*{margin: 0;padding: 0;}
+html{background-color: #fff;color: #333;}
+a{text-decoration: inherit;color: inherit;}
+img{max-width: 100%;display: block;}
+ul,ol,li{list-style: none;} */
+/* 
+@charset "utf-8";
+*{margin: 0;padding: 0;}
+html{background-color: #fff;color: #333;}
+a{text-decoration: inherit;color: inherit;}
+img{display: block;
+    /* max-width: 100%; */
+/* }
+ul,ol,li{list-style: none;}
+h2{
+    font-size: 1.2rem;
+} */ 
+
+@charset "utf-8";
+html{color: #333;background-color: #fff;overflow-x:hidden ;}
+a{text-decoration: inherit;color: inherit;}
+ul{list-style: none;}
+*{margin: 0;padding: 0;}
+img{max-width: 100%;}
+.logo{
+    margin: 20px 0;
+}
+.container{
+    
+    
+    height: 850px;
+    
+    display: flex;
+}
+header{
+    width: 200px;
+    background-color: rgb(131, 131, 245);
+    position: relative;
+    z-index: 5;
+    
+}
+.gnb{
+    margin: 0 auto;
+    width: 180px;  
+}
+.gnb>li>a{
+    background-color: rgb(170, 170, 255);
+}
+
+.gnb a{
+    height: 50px;
+    width: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.gnb>li{
+    position: relative;
+}
+.gnb ul{
+    position: absolute;
+    left: 180px;
+    top: 0;
+    z-index: 6;
+    display: flex;
+    width: calc(100vw - 190px);
+    background-color: rgba(255, 228, 196, 0.925);
+    transition: all .5s ease 0s;
+    opacity: 0;
+    pointer-events: none;
+}
+.gnb:hover ul{
+    opacity: 1;
+    pointer-events: auto;
+}
+.gnb li:hover>a{
+    background-color: #000;
+    color: #fff;
+}
+.spotmenu{
+    color: #fff;
+    display: flex;
+    width: 180px;
+    margin: 0 auto;
+    
+    margin-top: 30px;
+    text-decoration: underline;
+    justify-content: space-between;
+}
+.spotmenu>li{
+    padding: 10px;
+    border: 1px solid #fff;
+}
+.wrap{
+    width: calc(100% - 200px);
+    
+}
+
+.station{
+    height: 400px;
+    background-color: rgb(255, 75, 111);
+    position: relative;
+}
+.train{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.train>li{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .5s ease 0s;
+}
+.train>li.on{
+    opacity: 1;
+    pointer-events: auto;
+}
+.train img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.direct{
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-align: center;
+    background-color: deepskyblue;
+}
+.banner{
+    height: 200px;
+    background-color: rgb(255, 184, 159);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.banner div{
+    width: 70%;
+}
+.banner div h2{
+    margin-bottom: 10px;
+}
+.tab_menu{
+    height: 250px;
+    padding:20px;
+    box-sizing: border-box;
+    
+}
+.tabs{
+    display: flex;
+    margin-bottom: 20px;
+}
+.tabs a{
+    padding: 10px;
+    border: 1px solid black;
+}
+.tabs a.on{
+    background-color: #000;
+    color: #fff;
+}
+.notice li{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #333;
+    margin: 5px;
+}
+.gallery{
+    display: flex;
+    justify-content: space-between;
+}
+.gallery>li{
+    flex: 1;
+    margin-right: 10px;
+}
+.gallery>li:last-of-type{
+    margin-right: 0;
+}
+.tab_contents>ul{
+    display: none;
+}
+.notice.on{
+    display: block;
+}
+.gallery.on{
+    display: flex;
+}
+footer{
+    height: 120px;
+    background-color: black;
+    display: flex;
+    color: #fff;
+    align-items: center;
+}
+.foot_menu{
+    display: flex;
+}
+.foot_menu>li{
+    margin-right: 20px;
+    text-decoration: underline;
+}
+.popup{
+    position: fixed;
+    left: 300px;
+    top: 300px;
+    width: 300px;
+    height: 300px;
+    padding: 30px;
+    background-color: #fff;
+    border: 3px solid black;
+    display: none;
+    
+}
+.popup.on{
+    display: block  ;
+}
+.popup_ctl{
+    display: flex;
+    justify-content: flex-end;
+    
+}
+.btn_close{
+    padding: 10px 20px;
+    border: 2px solid black;
+    cursor: pointer;
+}
