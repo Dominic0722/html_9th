@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>역사박물관</title>
+    <link rel="stylesheet" href="./css/style.css">
+     
+    <script src="./js/jquery-1.12.3.js"></script>
+    <!-- <script src="./js/index.js"></script> -->
+    <script src="./js/index2.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="logo"><a href="#"><img src="./img/logo.png" alt="역사박물관"></a></h1>
+            <ul class="gnb">
+                <li>
+                    <a href="#">박물관 소개</a>
+                    <ul>
+                        <li><a href="#">인사말</a></li>
+                        <li><a href="#">박물관연혁</a></li>
+                        <li><a href="#">유물현황</a></li>
+                        <li><a href="#">관람안내</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">전시</a>
+                    <ul>
+                        <li><a href="#">선사시대</a></li>
+                        <li><a href="#">삼국시대</a></li>
+                        <li><a href="#">조선시대</a></li>
+                        <li><a href="#">근대시대</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">연구</a>
+                    <ul>
+                        <li><a href="#">생활유적</a></li>
+                        <li><a href="#">분묘유적</a></li>
+                        <li><a href="#">생산유적</a></li>
+                        <li><a href="#">통신유적</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">교육</a>
+                    <ul>
+                        <li><a href="#">문화행사</a></li>
+                        <li><a href="#">진로체험</a></li>
+                        <li><a href="#">외부교육</a></li>
+                        
+                    </ul>
+                </li>
+            </ul>
+        </header>
+        <div class="contents">
+            <!-- contents flex주고 space between 주는것도 가능 -->
+             <!-- 아니면 section에 margin 100px 0; -->
+            <section>
+                <h2>공지사항</h2>
+                <ul class="notice">
+                    <li class="btn_open"><a href="#">Lorem ipsum dolor sit amet.</a><span>1106</span></li>
+                    <li><a href="#">Lorem ipsum dolor sit amet.</a><span>1106</span></li>
+                    <li><a href="#">Lorem ipsum dolor sit amet.</a><span>1106</span></li>
+                    <li><a href="#">Lorem ipsum dolor sit amet.</a><span>1106</span></li>
+                </ul>
+            </section>
+            <section class="aa">
+                <h2>갤러리</h2>
+                <ul class="gallery">
+                    <!-- a태그 안에 img랑 p 같이 넣어서 링크적용되게 하기 -->
+                    <!-- p태그를 쓰면 줄넘김이 되서 이미지 아래 텍스트 나오게 가능-->
+                    <li><a href="#"><img src="./img/gal1.jpg" alt="1"><p>Lorem ipsum dolor</p></a></li>
+                    <li><a href="#"><img src="./img/gal2.jpg" alt="1"><p>Lorem ipsum dolor</p></a></li>
+                </ul>
+            </section>
+            <section>
+                <ul class="direct">
+                    <li><a href="#"><img src="./img/icon1.png" alt="1"><p>회사소개</p></a></li>
+                    <li><a href="#"><img src="./img/icon1.png" alt="1"><p>지도</p></a></li>
+                    <li><a href="#"><img src="./img/icon1.png" alt="1"><p>공지사항</p></a></li>
+                    <li><a href="#"><img src="./img/icon1.png" alt="1"><p>전화문의</p></a></li>
+                </ul>
+            </section>
+        </div>
+        <div class="station">
+            <ul class="train">
+                <li><a href="#"><img src="./img/slide1.jpg" alt="1"></a></li>
+                <li><a href="#"><img src="./img/slide2.jpg" alt="1"></a></li>
+                <li><a href="#"><img src="./img/slide3.jpg" alt="1"></a></li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <h1 class="f_logo"><a href="#"><img src="./img/logo.png" alt="1"></a></h1>
+        <div class="copy">COPYRIGHTⓒ by BARUNWEBDESIGN. ALL RIGHTS RESERVED.</div>
+        <form>
+            <select id="family">
+                <option value="국립박물관 홈페이지">국립박물관 홈페이지</option>
+                <option value="역사문화재단">역사문화재단</option>
+                <option value="지역문화재센터">지역문화재센터</option>
+            </select>
+        </form>
+    </footer>
+    <div class="modal"></div>
+    <div class="popup">
+        <h2>역사박물관에 오신 것을 환영합니다!</h2>
+        <p>안녕하세요! 역사박물관을 방문해 주셔서 감사합니다.
+            우리 박물관은 다양한 시대의 역사와 문화유산을 체험할 수 있는 특별한 공간입니다.
+            신규 특별 전시회와 다양한 프로그램이 준비되어 있으니, 놓치지 마세요!</p>
+        <div class="popup_ctl">
+            <div class="btn_close">X 닫기</div>
+        </div>
+    </div>
+</body>
+</html>

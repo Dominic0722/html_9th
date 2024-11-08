@@ -1,0 +1,154 @@
+*{margin: 0;padding: 0;}
+html{background-color: #fff;color: #333;}
+a{color: inherit;text-decoration: inherit;}
+img{max-width: 100%;}
+ul{list-style: none;}
+h2{font-size: 1.2rem;}
+.container{
+    display: flex;
+    height: 860px;
+}
+header{
+    width: 200px;
+    background-color: rgb(248, 170, 142);
+}
+.contents{
+    width: 400px;
+}
+
+.gnb{
+    width: 180px;
+    margin: 0 auto;
+    
+}
+.gnb>li>a{
+    background-color: aquamarine;
+}
+.gnb a{
+    
+    display: flex;
+    width: 180px;
+    align-items: center;
+    height: 50px;
+}
+.gnb ul{
+    position: absolute;
+    left: 180px;
+    top: 0;
+    background-color: rgba(149, 253, 166, 0.89);
+    width: 180px;
+    height: 200px;
+    opacity: 0;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.gnb>li{
+    position: relative;
+}
+.gnb>li:hover ul{
+    opacity: 1;
+    pointer-events: auto;
+}
+.gnb li:hover>a{
+    background-color: black;
+    color: #fff;
+}
+.banner{
+    display: flex;
+    justify-content: space-between;
+    background-color: blanchedalmond;
+    align-items: center;
+}
+.bannerContents{
+    width: 250px;
+}
+.bannerimg{
+    width: 150px;
+}
+.banner img{
+    width: 100%;
+    
+    object-fit: cover;
+}
+.banner p{
+    padding: 5px;
+}
+.notice>li{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+.gallery{
+    display: flex;
+    justify-content: space-around;
+}
+section h2{
+    margin: 10px 0;
+}
+section{
+    margin-bottom: 70px;
+}
+.station{
+    width: (100vw - 600px);
+    height: 860px;
+    overflow: hidden;
+}
+.train{
+    height: 300%;
+    width: 100%;
+    transition: all .5s ease 0s;
+}
+.train>li{
+    height: 33.333%;
+    width: 100%;
+    
+}
+.train>li img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+footer{
+    height: 100px;
+    display: flex;
+    background-color: black;
+    color: #fff;
+    justify-content: space-between;
+    align-items: center;
+}
+.sns{
+    display: flex;
+    
+}
+.sns>li{
+    margin-right: 10px;
+}
+
+.popup{
+    padding: 10px;
+    width: 400px;
+    height: 200px;
+    left: 300px;
+    top: 300px;
+    position: fixed;
+    background-color: #fff;
+    border: 3px solid black;
+    display: none;
+}
+.popup.on{
+    display: block;
+}
+.popup_ctl{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    
+}
+
+.btn_close{
+    padding: 10px 20px;
+    border: 1px solid black;
+    cursor: pointer;
+}
