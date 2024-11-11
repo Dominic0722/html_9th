@@ -109,20 +109,26 @@ header{
 }
 .wrap ul{
     width: 800px;
-    height: 500px;
+    height: 400px;
     background-color: rgb(250, 233, 210);
     
 }
-.wrap ul.on{
-    
+.notice{
+    display: none;
+}
+.notice.on{
+    display: block;
 }
 .notice>li{
     display: flex;
     justify-content: space-between;
 }
 .gallery{
-    display: flex;
+    display: none;
     justify-content: space-around;
     text-align: center;
     
+}
+.gallery.on{
+    display: flex;
 }
