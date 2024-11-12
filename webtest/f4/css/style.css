@@ -19,7 +19,7 @@ h2{font-size: 1.1rem;} */
  .headerbg{
    border: 1px solid black;
    height: 100px;
-   width: 1920px;
+   width: 100%px;
    position: relative;
    background-color: #fff;
    z-index: 5;
