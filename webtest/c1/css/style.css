@@ -1,0 +1,181 @@
+*{margin: 0;padding: 0;}
+html{background-color: #fff;color: #333;}
+a{color: inherit;text-decoration: inherit;}
+img{max-width: 100%;}
+ul{list-style: none;}
+h2{font-size: 1.1rem;}
+
+.container{
+    width: 1000px;
+    height: 650px;
+    display: flex;
+}
+header{
+    width: 200px;
+    background-color: rgb(255, 184, 255);
+}
+.gnb{
+    width: 180px;
+    margin: 0 auto;
+    
+}
+
+.gnb>li>ul>li>a{
+    background-color: rgb(245, 168, 191);
+}
+.gnb a{
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+.gnb>li ul{
+    height: 0;
+    transition: all .5s ease 0s;
+    overflow: hidden;
+}
+.gnb li:hover ul{
+    height: 150px;
+}
+.gnb li:hover>a{
+    background-color: #000;
+    color: #fff;
+}
+.station{
+    width: 800px;
+    height: 350px;
+    position: relative;
+}
+.train{
+    width: 100%;
+    height: 100%;
+}
+.train>li{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all .5s ease 0s;
+}
+.train>li.on{
+    opacity: 1;
+}
+.train>li img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.contents{
+    display: flex;
+}
+section{
+    flex: 1;
+    
+}
+.tabmenu{
+    width: 266.66px;
+    height: 200px;
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+}
+.tabmenu>dd{
+    position: absolute;
+    left: 0;
+    top: 50px;
+    width: 100%;
+    display: none;
+}
+.tabmenu>dt{
+    padding: 10px 20px;
+    border: 1px solid rgb(245, 168, 191);
+    cursor: pointer;
+}
+.tabmenu>dt.on{
+    background-color: rgb(245, 168, 191);
+}
+.tabmenu>dt.on+dd{
+    display: block;
+}
+
+.notice>li{
+    display: flex;
+    justify-content: space-between;
+}
+.gallery{
+    display: flex;
+    justify-content: space-around;
+}
+.gallery img{
+    width: 80px;
+    height: 130px;
+    object-fit: cover;
+}
+.banner{
+    background: url(../img/banner.jpg) no-repeat 50% 50% / cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+
+}
+.direct{
+    background: url(../img/direct.jpg) no-repeat 50% 50% / cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+section>a{
+    background-color: #000000b6;
+    padding: 10px 10px;
+}
+footer{
+    display: flex;
+    background-color: #000;
+    color: #fff;
+    height: 100px;
+    align-items: center;
+    
+    
+}
+.flogo{
+    margin-top: 20px;
+}
+.finfo>*{
+    padding-left: 70px;
+}
+.finfo>ul{
+    display: flex;
+    text-decoration: underline;
+    justify-content: center;
+}
+.finfo a{
+    padding-right: 15px;
+}
+.popup{
+    width: 300px;
+    height: 300px;
+    position: fixed;
+    left: 300px;
+    top: 300px;
+    border: 3px solid rgb(245, 168, 191);
+    background-color: #fff;
+    padding: 15px;
+    display: none;
+}
+.popup.on{
+    display: block;
+}
+.popup_ctl{
+    display: flex;
+    justify-content: flex-end;
+}
+.btn_close{
+    padding: 10px 15px;
+    border: 3px solid rgb(245, 168, 191);
+    cursor: pointer;
+}
