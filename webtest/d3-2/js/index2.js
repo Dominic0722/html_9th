@@ -1,5 +1,4 @@
 $(document).ready(function(){
-
     $(".btn_open").click(function(){
         $(".popup").addClass("on")
     })
@@ -7,19 +6,18 @@ $(document).ready(function(){
         $(".popup").removeClass("on")
     })
 
-    // let count=0
-    // setInterval(function(){
-    //     count++
-    //     if(count>2){count=0}
-    //     $(".train").css("transform",`translateY(${-33.333*count}%)`)
-    // },2500)
+    $("dt").click(function(){
+        $("dt").removeClass("on")
+        $(this).addClass("on")
+    })
 
+    
     let count=0
     setInterval(function(){
         count++
         if(count>2){count=0}
-        $(".train").css("transform",`translateY(${-33.333*count}%)`)
+        $(".train>li").removeClass("on")
+        $(".train>li").eq(count).addClass("on")
     },2500)
-
-    
+   
 })

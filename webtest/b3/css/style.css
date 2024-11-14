@@ -6,100 +6,102 @@ img{max-width: 100%;}
 h2{font-size: 1.1rem;}
 ul{list-style: none;}
 
+
 header{
-    height: 100px;
-    
-    display: flex;
-    justify-content: space-between;
-    width: 1200px;
     margin: 0 auto;
+    width: 1200px;
+    height: 100px;
+    display: flex;
+    background-color: rgb(255, 189, 145);
+    justify-content: space-between;
     position: relative;
-    z-index: 5;
-}
-.headerbg{
-    background-color: rgb(163, 213, 247);
+    z-index: 1;
 }
 .logo{
     display: flex;
     align-items: center;
 }
-/* .gnb{
-    display: flex;
-    
+.gnb{
     margin-top: 50px;
     margin-right: 20px;
+    display: flex;
 }
 .gnb a{
     display: flex;
     width: 150px;
     height: 50px;
-    justify-content: center;
     align-items: center;
-    
-    
-}
-.gnb li{
-    position: relative;
 }
 .gnb ul{
+    background-color: bisque;
     height: 0;
     overflow: hidden;
-    
-    pointer-events: none;
-    position: absolute;
-    left: 0;
-    top: 50px;
-    z-index: 10;
+    transition: all .5s ease 0s;
 }
-.gnb li:hover ul{
+.gnb :hover ul{
     height: 200px;
-    pointer-events: auto;
-    background-color: #fff;
 }
 .gnb li:hover>a{
     background-color: #000;
     color: #fff;
-} */
-
-.gnb{
-    display: flex;
-    margin-right: 20px;
-    margin-top: 50px;
-    height: 50px;
-    overflow: hidden;
 }
-.gnb a{
-    display: flex;
-    height: 50px;
-    width: 150px;
-    justify-content: center;
-    align-items: center;
-}
-.gnb:after{
-    content: "";
-    width: 100%;
-    height: 220px;
-    background-color: aquamarine;
-    position: absolute;
-    left: 0;
-    top: 50px;
-}
-/* .gnb ul{
-    background-color: #fff;
-    height: 0;
-    overflow: hidden;
-    pointer-events: none;
-}
-.gnb li:hover ul{
-    height: 200px;
-    pointer-events: auto;
-}
-.gnb li:hover>a{
-    background-color: #000;
-    color: #fff;
-} */
-
 .station{
+    width: 1200px;
+    height: 300px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.train{
+    width: 100%;
+    height: 300%;
+    transition: all .5s ease 0s;
+}
+.train>li{
+    width: 100%;
+    height: 33.333%;
+}
+.train>li img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .station{
     width: 1200px;
     margin: 0 auto;
     height: 300px;
@@ -119,7 +121,7 @@ header{
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
+} */
 .contents{
     display: flex;
     width: 1200px;

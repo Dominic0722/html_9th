@@ -11,37 +11,75 @@ h2{font-size: 1.1rem;}
     display: flex;
 }
 header{
-    width: 200px;
-    background-color: rgb(255, 184, 255);
+    background-color: rgb(247, 193, 202);
+
 }
 .gnb{
-    width: 180px;
+    width: 150px;
     margin: 0 auto;
-    
-}
-
-.gnb>li>ul>li>a{
-    background-color: rgb(245, 168, 191);
 }
 .gnb a{
-    width: 150px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 150px;
     height: 50px;
+    align-items: center;
+    justify-content: center;
 }
-.gnb>li ul{
-    height: 0;
+.gnb ul{
     transition: all .5s ease 0s;
+    height: 0;
     overflow: hidden;
+    background-color: bisque;
 }
-.gnb li:hover ul{
+.gnb>li:hover>ul{
     height: 150px;
 }
 .gnb li:hover>a{
     background-color: #000;
     color: #fff;
 }
+.station{
+    width: 800px;
+    height: 350px;
+    position: relative;
+}
+/* .train{
+    width: 100%;
+    height: 100%;
+} */
+.train>li{
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all .5s ease 0s;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.train>li.on{
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
 .station{
     width: 800px;
     height: 350px;
@@ -67,7 +105,7 @@ header{
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
+} */
 .contents{
     display: flex;
 }
@@ -76,39 +114,35 @@ section{
     
 }
 .tabmenu{
-    width: 266.66px;
+    box-sizing: border-box;
+    width:300px;
     height: 200px;
     display: flex;
     align-items: flex-start;
     position: relative;
 }
-.tabmenu>dd{
+dt{
+    cursor: pointer;
+}
+dd{
     position: absolute;
     left: 0;
     top: 50px;
     width: 100%;
     display: none;
 }
-.tabmenu>dt{
-    padding: 10px 20px;
-    border: 1px solid rgb(245, 168, 191);
-    cursor: pointer;
-}
-.tabmenu>dt.on{
-    background-color: rgb(245, 168, 191);
-}
-.tabmenu>dt.on+dd{
+dt.on+dd{
     display: block;
 }
-
 .notice>li{
     display: flex;
     justify-content: space-between;
 }
 .gallery{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
+
 .gallery img{
     width: 80px;
     height: 130px;
