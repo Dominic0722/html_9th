@@ -29,8 +29,7 @@ header:before{
     
 }
 header .commonFrame{
-    display: flex;
-    
+    display: flex; 
     justify-content: space-between;
 }
 
@@ -67,11 +66,9 @@ header .commonFrame{
 }
 .gnb>li>ul>li>a{
     display: flex;
-    
     height: 3rem;
     align-items: center;
 }
 .gnb>li>ul>li>a:hover{
-    
     color: var(--main-color);
 }

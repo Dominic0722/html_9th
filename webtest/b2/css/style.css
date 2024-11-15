@@ -5,212 +5,73 @@ html{background-color: #fff;color: #333;}
 a{text-decoration: inherit;color: inherit;}
 ul,ol{list-style: none;}
 
-header{
-    width: 1200px;
-    height: 100px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    z-index: 5;
-    
+:root{
+    --main-color:#f8a2a2;
 }
-.logo{
+.wrap{
     display: flex;
-    align-items: center;
+}
+header{
+    width: 200px;
+    background-color: #f8a2a2;
+    position: relative;
+    z-index: 1;
 }
 .gnb{
-    display: flex;
-    margin-top: 50px;
-    margin-right: 25px;
+    width: 150px;
+    margin: 0 auto;
+    position: relative;
+}
+.gnb a{
+    width: 150px;
     height: 50px;
-    overflow: hidden;
-    transition: all 0.5s ease 0s;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.gnb:hover{
-    height: 160px;
-}
-.gnb:after{
-    content: "";
+.gnb ul{
     position: absolute;
-    left: 0;
-    top: 100px;
-    width: 100%;
-    height: 150px;
-    background-color: rgb(28, 19, 158);
-    z-index: -1;
     opacity: 0;
-    pointer-events: none;
-    transition: all .5s ease 0s;
+    left: 150px;
+    top: 0;
+    background-color: antiquewhite;
+    display: flex;
+
 }
-.gnb:hover:after{
+.gnb>li:hover ul{
     opacity: 1;
-    pointer-events: auto;
-}
-.gnb>li>a{
-    width: 150px;
-    display: flex;
-    height: 50px;
-    align-items: center;
-    padding-left: 10px;
-    font-weight: bold;
-}
-.gnb>li>ul>li>a{
-    width: 150px;
-    display: flex;
-    height: 30px;
-    align-items: center;
-    padding-left: 10px;
-    color: #fff;
 }
 .gnb li:hover>a{
-    background-color: black;
+    background-color: #000;
     color: #fff;
 }
+
+
+
+
+
+
+
+
+
+
 .station{
+    margin: 0 auto;
     width: 1200px;
     height: 300px;
-    margin: 0 auto;
     overflow: hidden;
 }
 .train{
     width: 100%;
-    height: 100%;
-    position: relative;
+    height: 300%;
+    transition: all .5s ease 0s;   
 }
-.train>li{
-    position: absolute;
-    left: 0;
-    top: 0;
+.train>li{   
     width: 100%;
-    height: 100%;
-    opacity: 0;
-    pointer-events: none;
-    transition: all .5s ease 0s;
-
-}
-.train>li.on{
-    opacity: 1;
-    pointer-events: auto;
+    height: 33.333%;   
 }
 .train>li img{
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
-.contents{
-    display: flex;
-    margin: 0 auto;
-    width: 1200px;
-    height: 200px;
-}
-.contents>section{
-    flex: 1;
-    padding: 10px;
-
-}
-.contents h2{
-    margin: 10px 0;
-}
-.notice li{
-    display: flex;
-    justify-content: space-between;
-    font-size: 14px;
-}
-.notice li a{
-    width: 60%;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-.gallery{
-    display: flex;
-    justify-content: space-around;
-}
-.gallery img{
-    width: 120px;
-    height: 120px;
-    object-fit: cover;
-
-}
-.gallery img:hover{
-    opacity: .8;
-}
-.direct{
-    background: url(../img/direct.png) no-repeat 50% 50% / cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.direct a{
-    background-color: rgb(28, 19, 158);
-    padding: 10px 20px;
-    color: #fff;
-}
-footer{
-    width: 1200px;
-    height: 100px;
-    margin: 0 auto;
-    background-color: #000;
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-}
-.info{
-    flex-grow: 1;
-    /* border: 1px solid red; */
-}
-.copy{
-    text-align: center;
-}
-.foot_menu{
-    display: flex;
-    
-    margin-bottom: 10px;
-    
-}
-/* footer>*{
-    flex-grow: 1;
-    border:  1px solid #fff;
-} */
-.foot_menu{
-    /* border: 1px solid #fff; */
-    flex-grow: 1;
-    justify-content: center;
-}
-.foot_menu>li{
-    margin-right: 10px;
-    text-decoration: underline;
-    /* border: 1px solid black; */
-}
-.popup{
-    position: fixed;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
-    width: 400px;
-    padding: 30px;
-    background-color: #fff;
-    border: 2px solid black;
-    display: none;
-}
-.popup.on{
-    display: block;
-}
-.popup_ctl{
-    margin-top: 30px;
-    display: flex;
-    justify-content: flex-end;
-
-}
-.btn_close{
-    cursor: pointer;
-    border: 1px solid black;
-    padding: 10px 30px;
-}
-form{
-    margin-right: 10px;
 }
