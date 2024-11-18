@@ -6,7 +6,7 @@ header{
     width: 100%;
     left: 0;
     top: 0;
-    
+    z-index: 2;
     overflow: hidden;
     transition: all 0.4s ease 0s;
 }
@@ -71,4 +71,47 @@ header .commonFrame{
 }
 .gnb>li>ul>li>a:hover{
     color: var(--main-color);
+}
+
+.station1{
+    width: 100%;
+    /* height: 100vh; */
+    height: auto;
+}
+.station1 .swiper-pagination-bullet {
+    width:.5rem;
+    height:.5rem;
+    display: inline-block;
+    border-radius: var(--swiper-pagination-bullet-border-radius, 50%);
+    background:#fff;
+    opacity: 1;
+}
+.station1 .swiper-pagination-bullet-active {
+    opacity: 1;
+    background: var(--main-color);
+}
+.type1{
+    margin-top: var(--space-large);
+    display: flex;
+    gap: 4rem;
+    margin-bottom: var(--space-large);
+}
+.type1 figure{
+    flex: 1;
+}
+.type1 section{
+    flex: 1;
+}
+/* .pt100{
+    padding-top: 5rem;
+} */
+.type1 h2{
+    margin-bottom: var(--space-medium);
+}
+.type1 h3{
+    margin-bottom: var(--space-small);
+}
+.type1 p{
+    margin: var(--space-small) 0;
+    
 }

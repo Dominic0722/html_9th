@@ -1,13 +1,40 @@
 window.addEventListener("load",function(){
-    let btn_gnb=document.querySelector("#btn_gnb")
-    let hidden_gnb=document.querySelector(".hidden_gnb")
-    let btn_close_gnb=document.querySelector("#btn_close_gnb")
-
-    btn_gnb.addEventListener("click",function(){
-        hidden_gnb.classList.add("on")
-    })
-    btn_close_gnb.addEventListener("click",function(){
-        hidden_gnb.classList.remove("on")
-    })
-
+    const swiper1 = new Swiper('.station1', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+      
+        // If we need pagination
+        pagination: {
+          el: '.swiper-pagination',
+          // dynamicBullets: true,
+          clickable:true,
+          
+        },
+        slidesPerView:1,
+        autoHeight:true,
+        autoplay:{
+         delay: 3000,
+       },
+        speed:1000,
+      });
+      const swiper2 = new Swiper('.station2', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+      
+        // If we need pagination
+        pagination: {
+          el: '.swiper-pagination',
+          // dynamicBullets: true,
+          clickable:true,
+        },
+        autoHeight:true,
+        slidesPerView:1,
+        autoplay:{
+         delay: 3000,
+       },
+        speed:1000,
+        
+      });
 })

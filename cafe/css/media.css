@@ -1,11 +1,11 @@
-.header_mo{
-    display: none;
-}
+.mo{display: none;}
+.station2{display: none!important;}
 @media (max-width:1280px){
 /* 태블릿스타일 */
-.pc{
-    display: none;
-}
+
+.mo{display: block;}
+.pc{display: none;}
+.tab{display: block;}
 html{
     font-size: var(--fontsize-tab);
 }
@@ -20,6 +20,7 @@ html{
     padding: 0 1rem;
     display: flex;
     justify-content: space-between;
+    z-index: 2;
 }
 .logo_mo{
     display: flex;
@@ -133,15 +134,49 @@ html{
 .gnb_mo li:hover>a{
     color: var(--sub-color);
 }
-
+.commonFrame{
+    width: auto;
+    margin: 0 1rem;
+}
+.type1{
+    margin-top: var(--space-large);
+    gap: 1rem;
+}
+.pt100{
+    padding-top: 0;
+}
 }
 @media (max-width:768px){
 /* 모바일스타일 */
+.station2{
+    display: block!important;
+    width: 100%;
+    /* height: 100vh; */
+    height: auto;
+}
+.station2 .swiper-pagination-bullet {
+    width:.5rem;
+    height:.5rem;
+    display: inline-block;
+    border-radius: var(--swiper-pagination-bullet-border-radius, 50%);
+    background:#fff;
+    opacity: 1;
+}
+.station2 .swiper-pagination-bullet-active {
+    opacity: 1;
+    background: var(--main-color);
+}
+.station1{display: none!important;}
+
     html{
         font-size:var(--fontsize-mob);
     }
     .pc{
         display: none;
     }
+    .type1{
+        flex-direction: column-reverse;
+    }
+    
 
 }
