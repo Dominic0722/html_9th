@@ -95,6 +95,7 @@ header .commonFrame{
     display: flex;
     gap: 4rem;
     margin-bottom: var(--space-large);
+    /* 배경화면 넣기 */
 }
 .type1 figure{
     flex: 1;
@@ -115,3 +116,164 @@ header .commonFrame{
     margin: var(--space-small) 0;
     
 }
+.title1{
+    margin-top: var(--space-large);
+}
+.title1 h2{
+    margin-bottom:var(--space-small);
+}
+.title2 h2{
+    margin-bottom:var(--space-small);
+}
+.title2{
+    text-align: center;
+    margin-top: var(--space-large);
+}
+.title3{
+    text-align: center;
+    position: relative;
+    margin-top: var(--space-large);
+}
+.title3 h2{
+    margin-bottom:var(--space-medium);
+}
+.title3:after{
+    content: "";
+    position: absolute;
+    left: calc(50% - 1rem);
+    top: 3.75rem;
+    width: 2rem;
+    height: .15rem;
+    background-color: var(--main-color);
+}
+.title4{
+    text-align: center;
+    position: relative;
+    padding-bottom: 5rem;
+    margin-top: var(--space-large);
+}
+.title4:after{
+    content: "";
+    position: absolute;
+    width: .2rem;
+    height: 4rem;
+    left: calc(50% - .1rem);
+    bottom: 0;
+    background-color: var(--main-color);
+}
+.title4 h2{
+    margin-bottom: var(--space-small);
+}
+
+.commonFrame.desc1{
+    display: flex;
+    margin-top: var(--space-medium);
+    margin-bottom: var(--space-medium);
+    gap: 4rem;
+}
+.commonFrame.desc1>*{
+    flex: 1;
+    
+}
+.txt{
+    padding-top: var(--space-medium);
+}
+.txt h3{
+    margin-bottom: var(--space-small);
+}
+.txt p{
+    margin: var(--space-small) 0;
+}
+.commonFrame.desc2{
+    display: flex;
+    margin-top: var(--space-medium);
+    margin-bottom: var(--space-medium);
+    gap: 4rem;
+    flex-direction: row-reverse;
+}
+.desc2>*{
+    flex: 1;
+}
+.commonFrame.desc3{
+    display: flex;
+    margin-top: var(--space-medium);
+    margin-bottom: var(--space-medium);
+    gap: 4rem;
+    flex-direction: row;
+}
+.desc3>*{
+    flex: 1;
+}
+.commonFrame.fade{
+    display: flex;
+    margin-top: var(--space-large);
+    margin-bottom: var(--space-large);
+    align-items: center;
+    gap: 4rem;
+}
+.commonFrame.fade>*{
+    flex: 1;
+}
+.fade_txt h3{
+    margin-bottom: var(--space-small);
+}
+.fade_txt p{
+    margin-bottom: var(--space-small);
+}
+.station4{
+    pointer-events: none!important;
+}
+.outerFrame{
+    padding: var(--space-Xlarge) 0;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.678) url(../img/buisness_img1.jpg) no-repeat 50% 50% / cover;
+    background-blend-mode: overlay;
+    color: #fff;
+}
+.outerFrame .commonFrame>*{
+    margin: var(--space-small) 0;
+}
+.outerFrame .commonFrame>p:nth-of-type(1){
+    margin-bottom: var(--space-large);
+}
+.outerFrame .commonFrame>p:nth-of-type(2){
+    margin-bottom: var(--space-medium);
+}
+.direct a{
+    margin-right: var(--space-small);
+}
+footer{
+    background-color: #000;
+    color: #fff;
+    padding-top:var(--space-large) ;
+    padding-bottom: var(--space-Xlarge);
+}
+footer .commonFrame{
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+}
+.fsns img{
+    height: 1.5rem;
+}
+.flogo img{
+    height: 6.5rem;
+}
+.fmenu{
+    margin-bottom: var(--space-medium);
+    display: flex;
+    gap: var(--space-small);
+}
+.info{
+    margin-bottom: var(--space-medium);
+    display: flex;
+    gap:0 var(--space-small);
+    flex-wrap: wrap;
+    opacity: .85;
+    font-size: 0.9rem;
+}
+.fsns{
+    display: flex;
+    gap: var(--space-small);
+}
+

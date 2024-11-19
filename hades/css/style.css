@@ -1,0 +1,31 @@
+.outerFrame{
+    background-color: #000;
+}
+.commonFrame{
+    width: 1400px;
+    margin: 0 auto;
+    position: relative;
+    background: url(../img/background/latest-Recovered.png) 50% 50% / cover;
+    
+}
+ul li{
+    list-style: none;
+}
+.station1 .swiper-slide{
+    opacity: 0!important;
+}
+.station1 .swiper-slide.swiper-slide-active{
+    opacity: 1!important;
+}
+.station2.swiper{
+    position: absolute;
+    
+    right:0;
+    top:0;
+    width:270px;
+    height:100%;
+}
+.station2 img{
+    width: 200px;
+}
+

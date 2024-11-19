@@ -141,10 +141,28 @@ html{
 .type1{
     margin-top: var(--space-large);
     gap: 1rem;
+    margin-bottom: var(--space-large);
 }
 .pt100{
     padding-top: 0;
 }
+.commonFrame .decs1{
+    margin-top: var(--space-medium);
+    margin-bottom: var(--space-medium);
+    gap: 1rem;
+}
+.commonFrame .decs2{
+    margin-top: var(--space-medium);
+    margin-bottom: var(--space-medium);
+    gap: 1rem;
+}
+.commonFrame.fade{
+    gap: 1rem;
+    margin-top: var(--space-large);
+    margin-bottom: var(--space-large);
+}
+
+
 }
 @media (max-width:768px){
 /* 모바일스타일 */
@@ -177,6 +195,62 @@ html{
     .type1{
         flex-direction: column-reverse;
     }
+    .commonFrame.desc1{
+        flex-direction: column;
+        gap: var(--space-small);
+    }
+    .txt{
+        padding-top: 0;
+    }
+    .commonFrame.desc2{
+        flex-direction: column;
+        gap: var(--space-small);
+    }
+    .txt{
+        padding-top: 0;
+    }
+    .commonFrame.desc3{
+        flex-direction: column;
+        gap: var(--space-small);
+    }
+    .txt{
+        padding-top: 0;
+    }   
+    .commonFrame.fade{
+        align-items: stretch;
+        flex-direction: column;
+        gap: var(--space-small);
+        
+    }
+    .station3{
+        width: 100%;
+    }
+    .station4{
+        width: 100%;
+    }
+    footer .commonFrame{
+        flex-direction: column-reverse;
+        gap: var(--space-small);
+        align-items: center;
+    }
+    .fmenu{
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 0 var(--space-small);
+    }
+    .info{
     
+        justify-content: center;
+    }
+    .copy{
+        text-align: center;
+    }
+    .fsns{
+        justify-content: center;
+        padding-bottom: var(--space-medium);
+    }
+    .flogo{
+        padding-bottom: var(--space-medium);
+    }
 
 }

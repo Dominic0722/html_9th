@@ -37,4 +37,20 @@ window.addEventListener("load",function(){
         speed:1000,
         
       });
+      const station3 = new Swiper(".station3",{
+        loop:true,
+        autoplay:true,
+        effect: 'fade',
+        fadeEffect: {
+          crossFade: true
+        },
+      })
+      const station4 = new Swiper(".station4")
+
+      station3.on('slideChange', function () {
+        // console.log(station3.realIndex);
+        station4.slideToLoop(station3.realIndex)
+      });
+
+
 })

@@ -19,7 +19,7 @@ a{
     color: inherit;
     text-decoration: inherit;
 }
-ul,ol{
+ul,ol,li{
     list-style: none;
 }
 img,video{
@@ -27,5 +27,8 @@ img,video{
 }
 input{
     outline: 0;
+}
+html{
+    word-break: keep-all;
 }
 /* /////스타일 초기화///// */

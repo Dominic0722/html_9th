@@ -5,7 +5,7 @@ html{
     font-size: var(--fontsize-pc);
     font-weight: var(--font-medium);
 }
-.garamond{
+b{
     font-family: "EB Garamond", serif;
     font-weight: var(--font-medium);
 }
@@ -42,6 +42,11 @@ p{
     cursor: pointer;
     /* 선택한 태그가 a태그 뿐만이 아니라 span태그 같은 다른 태그가 될 수도 있다 가정 */
 }
+.btn_common.main{
+    background-color: var(--main-color);
+    color: #fff;
+    border: 1px solid var(--main-color);
+}
 .btn_common.big{
     padding: .4rem 2rem;
 }
@@ -64,4 +69,5 @@ p{
 .btn_common.white{
     color: #fff;
     border: 1px solid #fff;
+    background-color: transparent;
 }
