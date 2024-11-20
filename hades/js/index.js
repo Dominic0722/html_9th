@@ -5,18 +5,20 @@ window.addEventListener("load",function(){
         effect: 'fade',
         fadeEffect: {
           crossFade: true
-        },
+        }
       })
       const station2 = new Swiper(".station2",{
         slidesPerView:3.5,
         direction: 'vertical',
         loop:true,
+        spaceBetween: 14
 
       })
 
       station2.on('slideChange', function () {
         // console.log(station3.realIndex);
         station1.slideToLoop(station2.realIndex)
+        
         
       });
 

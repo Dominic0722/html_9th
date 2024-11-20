@@ -78,6 +78,9 @@ header .commonFrame{
     /* height: 100vh; */
     height: auto;
 }
+.station3 img{
+    object-fit: contain;
+}
 .station1 .swiper-pagination-bullet {
     width:.5rem;
     height:.5rem;
@@ -240,7 +243,7 @@ header .commonFrame{
     margin-bottom: var(--space-medium);
 }
 .direct a{
-    margin-right: var(--space-small);
+    margin: var(--space-small);
 }
 footer{
     background-color: #000;
@@ -276,4 +279,54 @@ footer .commonFrame{
     display: flex;
     gap: var(--space-small);
 }
+
+h3.ml{
+    margin-top: var(--space-Xlarge);
+    margin-bottom: var(--space-large);
+    padding-top: var(--space-large);
+}
+h3.mla{
+    margin-top: var(--space-large);
+    margin-bottom: var(--space-large);
+    
+}
+.commonFrame.desc3{
+    display: flex;
+    gap: 4rem;
+    justify-content: space-between;
+}
+.commonFrame.desc3 .txt{flex: 6;}
+.commonFrame.desc3 figure{
+    flex: 5;
+}
+.commonFrame.desc3 figure img{
+    object-fit: cover; 
+    width: 100%;
+    height: 100%;
+}
+.station5{
+    margin-bottom: var(--space-large);
+}
+.station5 li>*{
+    margin-bottom: var(--space-small);
+}
+.station5 li>*:last-child{
+    margin-bottom:0;
+}
+.station5 strong{
+    display: block;
+}
+.station5 figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.station5.commonFrame{
+    padding-bottom: var(--space-large);
+}
+.station5 .swiper-pagination-bullet-active {
+    opacity: 1;
+    background: var(--main-color);
+}
+
 
