@@ -19,6 +19,7 @@
 .commonFrame{
     width: 1400px;
     margin: 0 auto;
+    height: 100%;
 }
 .commonFrame.hero{
     position: relative;
@@ -50,14 +51,21 @@ ul li{
 }
 .station2.swiper{
     position: absolute;
-    
+    z-index: 10;
     right:0;
     top:0;
     width:270px;
-    height:100%;
+    /* height:100%; */
+    height: 100vh;
+    flex-direction: column;
+    display: flex;
 }
-.station2 img{
+.station2 img {
     width: 200px;
+    height: auto;
+}
+.station2>.swiper-wrapper .swiper-slide {
+    height: 260px; /* 슬라이드 높이를 설정하여 spaceBetween이 적용되도록 */
 }
 .btn_common{
     background: url(../img/ico/btn_common.png) no-repeat 50% 50% / cover;

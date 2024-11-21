@@ -11,7 +11,8 @@ window.addEventListener("load",function(){
         slidesPerView:3.5,
         direction: 'vertical',
         loop:true,
-        spaceBetween: 14
+        spaceBetween: 100,
+        freeMode: true,
 
       })
 
